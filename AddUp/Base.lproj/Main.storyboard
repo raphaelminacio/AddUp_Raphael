@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1611" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Daniela.ttf">
+            <string>Daniela</string>
+        </array>
         <array key="Metro Bold.ttf">
             <string>MetroBold</string>
         </array>
@@ -26,186 +31,416 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-zr-8VF">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaN-zr-8VF">
                                 <rect key="frame" x="0.0" y="100" width="375" height="447"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-3L-zFz">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="446"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T7e-3L-zFz">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="466"/>
                                         <subviews>
-                                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-4k-RDg">
-                                                <rect key="frame" x="36" y="18" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="7">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dn7-dt-wDU"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-wg-Zgg">
-                                                <rect key="frame" x="141" y="18" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="8">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAu-vd-uP3"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9Z-JW-7wQ">
-                                                <rect key="frame" x="246" y="18" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="9">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDa-s0-on5"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-Wz-rov">
-                                                <rect key="frame" x="35" y="98" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="4">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGO-do-ihV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-dh-cSQ">
-                                                <rect key="frame" x="140" y="98" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="5">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8G-d3-b47"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vx-DK-4QH">
-                                                <rect key="frame" x="245" y="98" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="6">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plr-Wb-Rj5"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-1f-5m2">
-                                                <rect key="frame" x="35" y="178" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="1">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpI-mu-TEs"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y50-lW-6X5">
-                                                <rect key="frame" x="140" y="178" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="2">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0t-Uj-O54"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGq-dc-66i">
-                                                <rect key="frame" x="245" y="178" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="32"/>
-                                                <state key="normal" title="3">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NX9-A1-0i7"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs3-m9-sAU">
-                                                <rect key="frame" x="245" y="258" width="95" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="32"/>
-                                                <state key="normal" title=".">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTQ-NW-zZF"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLU-s2-eQk">
-                                                <rect key="frame" x="34" y="258" width="201" height="71"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
-                                                <state key="normal" title="0">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSg-Tz-y70"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" alpha="0.20000000000000001" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-cN-3CC">
-                                                <rect key="frame" x="195" y="339" width="144" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="42"/>
-                                                <state key="normal" title="+ tx">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uf-xh-GGV"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" alpha="0.20000000000000001" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40H-zs-RQN">
-                                                <rect key="frame" x="37" y="340" width="144" height="70"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="42"/>
-                                                <state key="normal" title="+">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKu-Dt-Zh4"/>
-                                                </connections>
-                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="tca-FA-tZG">
+                                                <rect key="frame" x="18" y="18" width="339" height="432.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="FHT-UY-aCj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="339" height="78.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR8-4k-RDg" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="WR8-4k-RDg" secondAttribute="height" multiplier="19:14" id="WCc-hV-ceb"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="7">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Dn7-dt-wDU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l9Y-wg-Zgg" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="116.5" y="0.0" width="106" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="l9Y-wg-Zgg" secondAttribute="height" multiplier="19:14" id="sgP-xU-myk"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="8">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hAu-vd-uP3"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9Z-JW-7wQ" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="232.5" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="H9Z-JW-7wQ" secondAttribute="height" multiplier="19:14" id="L9c-sH-Xir"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="9">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UDa-s0-on5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ib1-Og-Zux">
+                                                        <rect key="frame" x="0.0" y="88.5" width="339" height="78.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAN-Wz-rov" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="RAN-Wz-rov" secondAttribute="height" multiplier="19:14" id="YkB-13-T9P"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="4">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IGO-do-ihV"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-dh-cSQ" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="116.5" y="0.0" width="106" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="hhD-dh-cSQ" secondAttribute="height" multiplier="19:14" id="CUP-1U-aRF"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="5">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H8G-d3-b47"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vx-DK-4QH" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="232.5" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="9vx-DK-4QH" secondAttribute="height" multiplier="19:14" id="RwF-rH-i9g"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="6">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Plr-Wb-Rj5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nc7-HI-hlx">
+                                                        <rect key="frame" x="0.0" y="177" width="339" height="78.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyC-1f-5m2" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="dyC-1f-5m2" secondAttribute="height" multiplier="19:14" id="G2M-bQ-RjV"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="1">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rpI-mu-TEs"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y50-lW-6X5" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="116.5" y="0.0" width="106" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="Y50-lW-6X5" secondAttribute="height" multiplier="19:14" id="wam-L9-43X"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="2">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s0t-Uj-O54"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGq-dc-66i" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="232.5" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="SGq-dc-66i" secondAttribute="height" multiplier="19:14" id="yJg-gC-72A"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="3">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NX9-A1-0i7"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qNr-ML-l3x">
+                                                        <rect key="frame" x="0.0" y="265.5" width="339" height="78.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLU-s2-eQk" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="222.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="MLU-s2-eQk" secondAttribute="height" multiplier="201:71" id="KED-bW-Me1"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="0">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSg-Tz-y70"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gs3-m9-sAU" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="232.5" y="0.0" width="106.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="gs3-m9-sAU" secondAttribute="height" multiplier="19:14" id="l6r-pX-p6d"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title=".">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iTQ-NW-zZF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bRf-IN-VWn">
+                                                        <rect key="frame" x="0.0" y="354" width="339" height="78.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" alpha="0.40000000000000002" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40H-zs-RQN" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="164.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="40H-zs-RQN" secondAttribute="height" multiplier="21:10" id="hyf-RR-WGx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="+">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bKu-Dt-Zh4"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" alpha="0.40000000000000002" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaG-cN-3CC" customClass="RoundButton" customModule="AddUp" customModuleProvider="target">
+                                                                <rect key="frame" x="174.5" y="0.0" width="164.5" height="78.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="EaG-cN-3CC" secondAttribute="height" multiplier="21:10" id="c6Y-GK-7Bt"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="55"/>
+                                                                <state key="normal" title="+ tx">
+                                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="15"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="buttonsManager:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uf-xh-GGV"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="Nc7-HI-hlx" firstAttribute="leading" secondItem="tca-FA-tZG" secondAttribute="leading" id="0zT-g8-FrJ"/>
+                                                    <constraint firstItem="FHT-UY-aCj" firstAttribute="top" secondItem="tca-FA-tZG" secondAttribute="top" id="4yl-1I-Qzb"/>
+                                                    <constraint firstItem="qNr-ML-l3x" firstAttribute="top" secondItem="Nc7-HI-hlx" secondAttribute="bottom" constant="10" id="6vG-bD-DBf"/>
+                                                    <constraint firstItem="ib1-Og-Zux" firstAttribute="leading" secondItem="tca-FA-tZG" secondAttribute="leading" id="8eG-oF-Vgy"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ib1-Og-Zux" secondAttribute="trailing" id="BxD-5a-WqP"/>
+                                                    <constraint firstItem="FHT-UY-aCj" firstAttribute="leading" secondItem="tca-FA-tZG" secondAttribute="leading" id="I37-wu-bd9"/>
+                                                    <constraint firstItem="bRf-IN-VWn" firstAttribute="leading" secondItem="tca-FA-tZG" secondAttribute="leading" id="KR3-eu-2Qd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Nc7-HI-hlx" secondAttribute="trailing" id="fgW-jY-pws"/>
+                                                    <constraint firstItem="bRf-IN-VWn" firstAttribute="top" secondItem="qNr-ML-l3x" secondAttribute="bottom" constant="10" id="hsw-Od-Ced"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bRf-IN-VWn" secondAttribute="trailing" id="je9-Mh-L8V"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qNr-ML-l3x" secondAttribute="trailing" id="k22-t0-Mga"/>
+                                                    <constraint firstItem="ib1-Og-Zux" firstAttribute="top" secondItem="FHT-UY-aCj" secondAttribute="bottom" constant="10" id="lxq-Z8-2DG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="FHT-UY-aCj" secondAttribute="trailing" id="mQ1-2W-zM7"/>
+                                                    <constraint firstItem="qNr-ML-l3x" firstAttribute="leading" secondItem="tca-FA-tZG" secondAttribute="leading" id="pEh-l7-Bwn"/>
+                                                    <constraint firstItem="Nc7-HI-hlx" firstAttribute="top" secondItem="ib1-Og-Zux" secondAttribute="bottom" constant="10" id="thg-g5-FAe"/>
+                                                </constraints>
+                                            </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.35771746438211199" green="0.4097472185591623" blue="0.27663351524143581" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="tca-FA-tZG" secondAttribute="trailing" constant="18" id="3Cc-wj-qQn"/>
+                                            <constraint firstItem="tca-FA-tZG" firstAttribute="leading" secondItem="T7e-3L-zFz" secondAttribute="leading" constant="18" id="PaK-gv-aGD"/>
+                                            <constraint firstItem="tca-FA-tZG" firstAttribute="top" secondItem="T7e-3L-zFz" secondAttribute="top" constant="18" id="mTT-oa-CMr"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.4400995264" green="0.71214414260000003" blue="0.68605007730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="T7e-3L-zFz" secondAttribute="bottom" id="Is0-nf-B48"/>
+                                    <constraint firstItem="T7e-3L-zFz" firstAttribute="top" secondItem="yaN-zr-8VF" secondAttribute="top" id="TR1-Tl-9MX"/>
+                                    <constraint firstAttribute="trailing" secondItem="T7e-3L-zFz" secondAttribute="trailing" id="erL-8c-V8X"/>
+                                    <constraint firstItem="T7e-3L-zFz" firstAttribute="leading" secondItem="yaN-zr-8VF" secondAttribute="leading" id="oGz-ld-yUa"/>
+                                    <constraint firstItem="T7e-3L-zFz" firstAttribute="width" secondItem="yaN-zr-8VF" secondAttribute="width" id="z2M-oR-xfR"/>
+                                </constraints>
                             </scrollView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ei0-gN-114" userLabel="top">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ei0-gN-114" userLabel="top">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL4-IR-tx3">
-                                        <rect key="frame" x="321" y="45" width="39" height="40"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="topLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-3B-EDq">
+                                        <rect key="frame" x="30" y="20" width="240" height="80"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.28014486039999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.92733269929999995" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL4-IR-tx3">
+                                        <rect key="frame" x="327" y="52" width="40" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" backgroundImage="right-arrow.png">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <segue destination="DFU-fL-koU" kind="presentation" identifier="mySeg" id="rri-rb-fbj"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TDK-3B-EDq">
-                                        <rect key="frame" x="89" y="38" width="198" height="55"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.28014486039999997" alpha="1" colorSpace="calibratedRGB"/>
-                                    </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.39394164044006252" green="0.58440363219895297" blue="0.54394105709900242" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92733269929885864" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xzp-U6-zip"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-gr-hGP" userLabel="bottom">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJB-gr-hGP" userLabel="bottom">
                                 <rect key="frame" x="0.0" y="547" width="375" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NtW-Ts-qS2">
                                         <rect key="frame" x="50" y="15" width="276" height="90"/>
@@ -214,16 +449,16 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$0.00" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GPH-ye-1zk">
                                                 <rect key="frame" x="0.0" y="0.0" width="184" height="90"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="28"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="30"/>
+                                                <color key="textColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddy-f3-Tt4">
                                                 <rect key="frame" x="187" y="12" width="89" height="67"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="MetroBold" family="Metro" pointSize="24"/>
+                                                <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="30"/>
                                                 <state key="normal" title="Erase">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="erase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RDP-dh-hsl"/>
@@ -234,15 +469,32 @@
                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NM-Yl-vjg">
                                         <rect key="frame" x="24" y="24" width="22" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Daniela" family="Daniela" pointSize="30"/>
+                                        <color key="textColor" red="0.17630121109999999" green="0.50223547219999998" blue="0.70600187780000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.39394164044006252" green="0.58440363219895297" blue="0.54394105709900242" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.92366844410000004" green="1" blue="0.99904913930000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="9CF-Ox-D5t"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IJB-gr-hGP" firstAttribute="top" secondItem="yaN-zr-8VF" secondAttribute="bottom" id="964-Hk-E5V"/>
+                            <constraint firstItem="7tK-zj-qTN" firstAttribute="top" secondItem="IJB-gr-hGP" secondAttribute="bottom" id="BQy-gN-A9g"/>
+                            <constraint firstItem="T7e-3L-zFz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6986" id="GRt-Hy-dvZ"/>
+                            <constraint firstAttribute="trailing" secondItem="IJB-gr-hGP" secondAttribute="trailing" id="KMy-zU-TAt"/>
+                            <constraint firstAttribute="trailing" secondItem="yaN-zr-8VF" secondAttribute="trailing" id="NKP-yh-ZcA"/>
+                            <constraint firstAttribute="trailing" secondItem="Ei0-gN-114" secondAttribute="trailing" id="eUF-sG-vPk"/>
+                            <constraint firstItem="yaN-zr-8VF" firstAttribute="top" secondItem="Ei0-gN-114" secondAttribute="bottom" id="fSG-Gk-MXK"/>
+                            <constraint firstItem="IJB-gr-hGP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="gMh-ar-L4d"/>
+                            <constraint firstItem="yaN-zr-8VF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hpk-37-07u"/>
+                            <constraint firstItem="Ei0-gN-114" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nEJ-4Y-jM9"/>
+                            <constraint firstItem="Ei0-gN-114" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="uuR-UV-Z2C"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="deviceHeight" destination="8bC-Xf-vdC" id="7xf-Ah-ZOD"/>
@@ -337,4 +589,8 @@
             <point key="canvasLocation" x="639" y="99"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="right-arrow.png" width="100" height="100"/>
+        <image name="topLogo.png" width="480" height="160"/>
+    </resources>
 </document>

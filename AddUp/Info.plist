@@ -61,5 +61,10 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Daniela.ttf</string>
+		<string>SoulmakerintheMountains.ttf</string>
+	</array>
 </dict>
 </plist>
