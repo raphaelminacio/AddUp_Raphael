@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		287355C01FB2E3C9005269AF /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 287355BA1FB2E3C9005269AF /* bg.jpg */; };
 		287355C31FB2E3C9005269AF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 287355BD1FB2E3C9005269AF /* icon.png */; };
 		287355E31FB2E3EA005269AF /* Icon-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 287355C51FB2E3E5005269AF /* Icon-64.png */; };
 		287355E41FB2E3EA005269AF /* Icon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 287355C61FB2E3E6005269AF /* Icon-114.png */; };
@@ -46,6 +45,7 @@
 		2873560B1FB3988E005269AF /* left-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 287356091FB3988E005269AF /* left-arrow.png */; };
 		2873560C1FB3988E005269AF /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 2873560A1FB3988E005269AF /* right-arrow.png */; };
 		2873560E1FB39E60005269AF /* launchScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 2873560D1FB39E60005269AF /* launchScreen.png */; };
+		9B5070171FB3CD8100EA6AFB /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9B5070161FB3CD8100EA6AFB /* bg.jpg */; };
 		9D355DC81D70946100D4D755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D4DEC4F1D6DDE39001490B9 /* Main.storyboard */; };
 		9D4DEC4C1D6DDE39001490B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DEC4B1D6DDE39001490B9 /* AppDelegate.swift */; };
 		9D4DEC4E1D6DDE39001490B9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4DEC4D1D6DDE39001490B9 /* ViewController.swift */; };
@@ -57,7 +57,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		287355BA1FB2E3C9005269AF /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 		287355BD1FB2E3C9005269AF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		287355C51FB2E3E5005269AF /* Icon-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-64.png"; sourceTree = "<group>"; };
 		287355C61FB2E3E6005269AF /* Icon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-114.png"; sourceTree = "<group>"; };
@@ -96,6 +95,7 @@
 		287356091FB3988E005269AF /* left-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left-arrow.png"; sourceTree = "<group>"; };
 		2873560A1FB3988E005269AF /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
 		2873560D1FB39E60005269AF /* launchScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchScreen.png; sourceTree = "<group>"; };
+		9B5070161FB3CD8100EA6AFB /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = ../../../../../../../Volumes/RAPHAEL/Raphael_AddUp/working/images/bg.jpg; sourceTree = "<group>"; };
 		9D4DEC481D6DDE38001490B9 /* AddUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AddUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D4DEC4B1D6DDE39001490B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D4DEC4D1D6DDE39001490B9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -177,11 +177,11 @@
 		287355B81FB2E3A0005269AF /* misc */ = {
 			isa = PBXGroup;
 			children = (
+				9B5070161FB3CD8100EA6AFB /* bg.jpg */,
 				2873560D1FB39E60005269AF /* launchScreen.png */,
 				287356091FB3988E005269AF /* left-arrow.png */,
 				2873560A1FB3988E005269AF /* right-arrow.png */,
 				287356071FB39526005269AF /* topLogo.png */,
-				287355BA1FB2E3C9005269AF /* bg.jpg */,
 				287355BD1FB2E3C9005269AF /* icon.png */,
 			);
 			path = misc;
@@ -282,9 +282,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				287355C01FB2E3C9005269AF /* bg.jpg in Resources */,
 				287355F51FB2E3EA005269AF /* Icon-1024.png in Resources */,
 				287355F01FB2E3EA005269AF /* Icon-196.png in Resources */,
+				9B5070171FB3CD8100EA6AFB /* bg.jpg in Resources */,
 				287355E41FB2E3EA005269AF /* Icon-114.png in Resources */,
 				2873560B1FB3988E005269AF /* left-arrow.png in Resources */,
 				287355FC1FB2E3EA005269AF /* Icon-16.png in Resources */,

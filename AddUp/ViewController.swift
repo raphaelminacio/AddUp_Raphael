@@ -7,7 +7,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var plusButton: UIButton!
     @IBOutlet weak var plusSign: UILabel!
     @IBOutlet weak var taxesButton: UIButton!
-    @IBOutlet weak var viewHeightConstraint: NSLayoutConstraint!
     @IBOutlet var deviceHeight: UIView!
     
     //# MARK: - Properties
