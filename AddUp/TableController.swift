@@ -78,7 +78,7 @@ class TableController: UIViewController, UITableViewDelegate, UITableViewDataSou
     //# MARK: - pickerView
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let pickerLabel = UILabel()
-        pickerLabel.textColor = UIColor.white
+        pickerLabel.textColor = UIColor.darkGray
         pickerLabel.text = data[row]
         pickerLabel.font = UIFont(name: "MetroBold", size: 24)
         pickerLabel.textAlignment = NSTextAlignment.center
